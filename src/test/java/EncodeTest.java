@@ -11,4 +11,11 @@ public class EncodeTest {
         Encode testInput = new Encode();
         assertEquals(myString,testInput.isInputString("Sheldon"));
     }
+
+    @Test
+    public void isInputInteger_InputFromUserIsNumber_integer() {
+        int myInteger = 1;
+        Encode testInput = new Encode();
+        assertEquals(myInteger,testInput.isInputInteger(1));
+    }
 }
