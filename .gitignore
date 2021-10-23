@@ -1,0 +1,16 @@
+# Java and Gradle #
+############
+build/
+.gradle/
+out/
+out
+.gradle
+gradle
+gradlew.bat
+gradlew
+settings.gradle
+
+# IntelliJ #
+############
+.idea
+.idea/
