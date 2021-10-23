@@ -14,13 +14,15 @@ public class Decode {
 
         for ( int i = 0; i <word.length(); i++  ) {
 
-            //shift character
             char letter = word.charAt(i);
 
+            //lowercase letters
             if (letter >= 'a' && letter <= 'z') {
+
+                //shift character
                 letter = (char) (letter - key);
 
-                //loop back to start
+                //return  back to start loop
                 if(letter < 'a') {
                     letter = (char) (letter - 'a'+'z'+1);
                 }
@@ -30,7 +32,7 @@ public class Decode {
             else if(letter >= 'A' && letter <= 'Z') {
                 letter = (char) (letter - key);
 
-                //loop back to start
+                //return  back to start loop
                 if(letter < 'A') {
                     letter = (char) (letter - 'A'+'Z'+1);
                 }
