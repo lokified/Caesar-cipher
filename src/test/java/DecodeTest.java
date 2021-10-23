@@ -5,9 +5,8 @@ public class DecodeTest {
 
     @Test
     public void isInputString_checkIfInputIsString_string() {
-        String myString = "Sheldon";
-        Encode testInput = new Encode();
-        assertEquals(myString,testInput.isInputString("Sheldon"));
+        String myString = "sheldon";
+        Decode testInput = new Decode();
+        assertEquals(myString,testInput.isInputString("sheldon"));
     }
-
 }
