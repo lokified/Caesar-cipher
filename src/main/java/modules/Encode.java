@@ -26,10 +26,20 @@ public class Encode {
 
                 //shifts the letters
                 letter = (char) (letter + newKey);
+
+                //return to back to the loop
+                if(letter > 'z'){
+                    letter = (char) (letter + 'a'-'z'-1);
+                }
             }
             //uppercase letters
             else if (letter >= 'A' && letter <= 'Z') {
                 letter = (char) (letter + newKey);
+
+                //return back to loop
+                if(letter > 'Z'){
+                    letter = (char) (letter + 'A'-'Z'-1);
+                }
             }
             encryption += letter;
         }
