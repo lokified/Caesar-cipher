@@ -1,3 +1,4 @@
+import modules.Encode;
 import java.util.Scanner;
 
 public class App{
@@ -19,5 +20,11 @@ public class App{
         Integer key = inputInteger.isInputInteger(theInputInteger);
 
         System.out.println("Your word(s) will be "+ key + " letter(s) ahead!!");
+
+        Encode yourEncryption = new Encode();
+        String encrypt = yourEncryption.encodeYourWord(words,key);
+
+        System.out.println("This is your encrypt : "+encrypt);
+
     }
 }

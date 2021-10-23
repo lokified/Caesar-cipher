@@ -1,3 +1,4 @@
+package  modules;
 public class Encode {
 
     private String yourWord;
@@ -5,18 +6,16 @@ public class Encode {
     private String encrypt;
 
     public String isInputString(String word) {
-        return word;
+        return this.yourWord = word;
     }
 
     public int isInputInteger(int key) {
         return this.yourKey = key;
     }
 
-    public  String encodeYourWord(String words){
+    public  String encodeYourWord(String words, int newKey){
         char letter;
         String encryption ="";
-
-        Integer newKey = this.yourKey;
 
         for ( int j = 0; j < words.length(); j++) {
 
@@ -34,7 +33,6 @@ public class Encode {
             }
             encryption += letter;
         }
-
-        return  encryption;
+        return encryption;
     }
 }
