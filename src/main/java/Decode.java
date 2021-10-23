@@ -25,6 +25,17 @@ public class Decode {
                     letter = (char) (letter - 'a'+'z'+1);
                 }
             }
+
+            //uppercase letters
+            else if(letter >= 'A' && letter <= 'Z') {
+                letter = (char) (letter - key);
+
+                //loop back to start
+                if(letter < 'A') {
+                    letter = (char) (letter - 'A'+'Z'+1);
+                }
+            }
+
             decrypt += letter;
         }
         return this.yourDecrypt = decrypt;
