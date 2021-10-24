@@ -3,16 +3,18 @@ public class Encode {
 
     private String yourWord;
     private int yourKey;
-    private String encrypt;
 
-    public String isInputString(String word) {
-
-        return this.yourWord = word;
+    public Encode(String yourWord, int yourKey) {
+        this.yourWord = yourWord;
+        this.yourKey = yourKey;
     }
 
-    public int isInputInteger(int key) {
+    public String getYourWord() {
+        return this.yourWord;
+    }
 
-        return this.yourKey = key;
+    public int getYourKey() {
+        return this.yourKey;
     }
 
     public  String encodeYourWord(String words, int newKey){
