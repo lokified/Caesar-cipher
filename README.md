@@ -4,7 +4,7 @@ A command line application that encode and decode words.
 ## Description
 This is an app that encrypts your words that you want to hide the meaning from others. It uses the Ceaser Cypher rule where the word input is encrypted by moving letter ahead of the number of your choosing which is known as a key in the alphabetical order. you can also decrypt your word depending on the key that you input.
 
-##BDD
+## BDD
 * INPUT : Enter any word or words and the key that is a number.
 * OUTPUT : Displays an encrypted word.
 
