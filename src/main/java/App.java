@@ -38,7 +38,7 @@ public class App{
             String choice = bufferedReader.readLine();
 
             if(choice.equals("Decrypt")) {
-                Decode yourDecrypt = new Decode();
+                Decode yourDecrypt = new Decode(encrypt);
                 String decrypt = yourDecrypt.decodeEncryption(encrypt,key);
 
                 System.out.println("Input String :" + words);

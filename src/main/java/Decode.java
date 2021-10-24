@@ -1,11 +1,13 @@
-import modules.Encode;
 public class Decode {
 
     private String yourWord;
-    private String yourDecrypt;
 
-    public String isInputString(String word) {
-        return this.yourWord = word;
+    public Decode(String yourWord) {
+        this.yourWord = yourWord;
+    }
+
+    public String getYourWord() {
+        return this.yourWord;
     }
 
     public String decodeEncryption(String word, int key){
@@ -40,6 +42,6 @@ public class Decode {
 
             decrypt += letter;
         }
-        return this.yourDecrypt = decrypt;
+        return decrypt;
     }
 }
