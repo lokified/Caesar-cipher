@@ -16,7 +16,7 @@ public class EncodeTest {
     public void isInputString_checkIfInputIsString_string() {
 
         Encode testInput = new Encode("sheldon",1);
-        assertEquals(true,testInput.getYourWord() instanceof String);
+        assertEquals("sheldon",testInput.getYourWord());
     }
 
     @Test

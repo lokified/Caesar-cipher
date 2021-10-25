@@ -12,7 +12,7 @@ public class DecodeTest {
     @Test
     public void isInputString_checkIfInputIsString_string() {
         Decode testInput = new Decode("tifmepo");
-        assertEquals(true,testInput.getYourWord() instanceof String);
+        assertEquals("tifmepo",testInput.getYourWord());
     }
 
     @Test
