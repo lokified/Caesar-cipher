@@ -7,7 +7,7 @@ public class Decode {
     }
 
     public String getYourWord() {
-        return this.yourWord;
+        return yourWord;
     }
 
     public String decodeEncryption(String word, int key){

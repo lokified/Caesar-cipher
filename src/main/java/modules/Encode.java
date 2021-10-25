@@ -10,11 +10,11 @@ public class Encode {
     }
 
     public String getYourWord() {
-        return this.yourWord;
+        return yourWord;
     }
 
     public int getYourKey() {
-        return this.yourKey;
+        return yourKey;
     }
 
     public  String encodeYourWord(String words, int newKey){
